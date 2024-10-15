@@ -1,4 +1,4 @@
-import { IServiceItem } from "../types/serviceItem";
+import { IServiceItem } from "../../types/serviceItem";
 
 export function ServiceItem({ image, title, description }: IServiceItem) {
   return (

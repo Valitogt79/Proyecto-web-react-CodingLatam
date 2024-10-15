@@ -1,5 +1,5 @@
-import heroImage from "../assets/images/hero.svg";
-import { Button } from "./Button";
+import heroImage from "../../assets/images/hero.svg";
+import { Button } from "../Button/Button";
 
 export function Hero() {
   return (

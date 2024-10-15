@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { ITestimonial } from "../types/testimonial";
 import { Testimonial } from "./Testimonial";
+import { ITestimonial } from "../../types/testimonial";
 
 export function Testimonials() {
   const [testimonials, setTestimonials] = useState([]);

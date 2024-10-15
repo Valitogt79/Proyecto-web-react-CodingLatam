@@ -1,4 +1,4 @@
-import { IStrategyCard } from "../types/stretegyCards";
+import { IStrategyCard } from "../../types/stretegyCards";
 
 export function StrategyCard({ id, title, description }: IStrategyCard) {
   return (

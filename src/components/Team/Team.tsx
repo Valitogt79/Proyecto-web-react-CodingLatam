@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import checkIcon from "../assets/images/check.svg";
-import userIcon from "../assets/images/Icon.svg";
-import tropyIcon from "../assets/images/trophy.svg";
+import checkIcon from "../../assets/images/check.svg";
+import userIcon from "../../assets/images/Icon.svg";
+import tropyIcon from "../../assets/images/trophy.svg";
 import { Teammate } from "./Teammate";
-import { ITeammate } from "../types/teammate";
+import { ITeammate } from "../../types/teammate";
 
 export function Team() {
   const [teammates, setTeammates] = useState([]);

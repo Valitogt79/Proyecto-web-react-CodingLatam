@@ -1,4 +1,4 @@
-import { IServiceItem } from "../types/serviceItem";
+import { IServiceItem } from "../../types/serviceItem";
 import { ServiceItem as ServiceItem } from "./ServiceItem";
 import { useEffect, useState } from "react";
 

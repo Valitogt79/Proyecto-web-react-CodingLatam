@@ -1,4 +1,4 @@
-import { IFaq } from "../types/faq";
+import { IFaq } from "../../types/faq";
 
 export function FAQ({ question, answer }: IFaq) {
   return (

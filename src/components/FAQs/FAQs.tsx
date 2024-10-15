@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
+import { IFaq } from "../../types/faq";
+import { Button } from "../Button/Button";
 import { FAQ } from "./FAQ";
-import { IFaq } from "../types/faq";
-import { Button } from "./Button";
 
 export function FAQs() {
   const [faqs, setFAQs] = useState([]);

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Button } from "./Button";
+import { IStrategyCard } from "../../types/stretegyCards";
+import { Button } from "../Button/Button";
 import { StrategyCard } from "./StrategyCard";
-import { IStrategyCard } from "../types/stretegyCards";
 
 export function Strategy() {
   const [strategyCards, setStrategyCards] = useState([]);

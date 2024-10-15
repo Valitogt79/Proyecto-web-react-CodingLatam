@@ -1,4 +1,4 @@
-import { ITeammate } from "../types/teammate";
+import { ITeammate } from "../../types/teammate";
 
 export function Teammate({ image, name, area, slogan }: ITeammate) {
   return (

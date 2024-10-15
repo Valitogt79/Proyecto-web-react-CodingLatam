@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Project } from "./Project";
-import { IProject } from "../types/project";
+import { IProject } from "../../types/project";
 
 export function Projects() {
   const [projects, setProjects] = useState([]);
