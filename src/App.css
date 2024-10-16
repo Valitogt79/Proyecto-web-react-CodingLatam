@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-color: #5eb9f0;
   --paragraph-color: #360697;
@@ -62,40 +66,18 @@ img {
   max-width: 100%;
 }
 
-nav {
-  padding: 20px 0;
-}
-
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-
-  & ul {
-    display: none;
-
-    &.active {
-      display: flex;
-      position: absolute;
-      background-color: var(--primary-color);
-      top: 0;
-      left: 0;
-      height: 100vh;
-      flex-direction: column;
-      padding: 50px 0 20px;
-      text-align: center;
-      width: 100%;
-    }
-
-    & a {
-      color: var(--white);
-    }
-
-    & span {
-      font-weight: 600;
-      position: absolute;
-      right: 10px;
-      top: 20px;
-    }
+  &.active {
+    display: flex;
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    flex-direction: column;
+    padding: 50px 0 20px;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -181,28 +163,6 @@ ul {
   & .btn-primary {
     justify-self: center;
   }
-}
-
-.hero {
-  padding: 60px 0;
-
-  & h1 {
-    min-width: 405px;
-    margin-bottom: 20px;
-  }
-
-  & p {
-    font-size: 22px;
-    line-height: 34px;
-    margin-bottom: 30px;
-  }
-}
-
-.hero-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 30px;
 }
 
 /* Projects Styles */
@@ -332,7 +292,7 @@ ul {
   & h3 {
     font-size: 20px;
 
-    &+p {
+    & + p {
       color: #aab0bc;
       text-transform: uppercase;
     }
@@ -416,32 +376,6 @@ ul {
 
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-container {
-    flex-wrap: nowrap;
-
-    & h1 {
-      font-size: 40px;
-    }
-
-    & p {
-      font-size: 18px;
-    }
-  }
-
-  .btn-nav {
-    display: none;
-  }
-
-  .nav-container {
-    & ul {
-      display: flex;
-
-      & a {
-        color: var(--heading-color);
-      }
-    }
   }
 
   .projects-container {

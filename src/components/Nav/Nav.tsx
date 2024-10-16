@@ -2,34 +2,49 @@ import logo from "../../assets/images/logo.png";
 
 export function Nav() {
   return (
-    <nav>
-      <div className="container nav-container">
+    <nav className="py-5 px0">
+      <div className="container flex justify-between">
         <div className="logo">
           <img src={logo} alt="Logo Image" />
         </div>
-        <span className="btn-nav" id="btn-menu">
+        <span className="md:hidden" id="btn-menu">
           Menu
         </span>
-        <ul>
+        <ul className="hidden md:flex">
           <li>
-            <a href="/">Demos</a>
+            <a className="text-white md:text-heading-color" href="/">
+              Demos
+            </a>
           </li>
           <li>
-            <a href="/">Pages</a>
+            <a className="text-white md:text-heading-color" href="/">
+              Pages
+            </a>
           </li>
           <li>
-            <a href="/">Projects</a>
+            <a className="text-white md:text-heading-color" href="/">
+              Projects
+            </a>
           </li>
           <li>
-            <a href="/">Blog</a>
+            <a className="text-white md:text-heading-color" href="/">
+              Blog
+            </a>
           </li>
           <li>
-            <a href="/">Blocks</a>
+            <a className="text-white md:text-heading-color" href="/">
+              Blocks
+            </a>
           </li>
           <li>
-            <a href="/">Documentacion</a>
+            <a className="text-white md:text-heading-color" href="/">
+              Documentacion
+            </a>
           </li>
-          <span className="btn-nav" id="btn-close">
+          <span
+            className="font-semibold absolute right-[10px] top-[20px] md:hidden"
+            id="btn-close"
+          >
             close
           </span>
         </ul>
