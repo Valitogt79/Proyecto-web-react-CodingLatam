@@ -10,12 +10,12 @@ export function Testimonials() {
       .then((data) => setTestimonials(data));
   }, []);
   return (
-    <section className="testimonials">
+    <section className="bg-light-gray py-16 px-0">
       <div className="container ">
-        <h2>
+        <h2 className="max-w-[670px] text-center mt-0 mx-auto mb-12">
           Don't take our word for it. See what customers are saying about us.
         </h2>
-        <div className="testimonials-list">
+        <div className=" grid grid-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial: ITestimonial) => (
             <Testimonial key={testimonial.id} {...testimonial} />
           ))}

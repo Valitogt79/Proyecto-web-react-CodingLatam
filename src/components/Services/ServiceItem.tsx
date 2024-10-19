@@ -2,11 +2,13 @@ import { IServiceItem } from "../../types/serviceItem";
 
 export function ServiceItem({ image, title, description }: IServiceItem) {
   return (
-    <div className="service-item">
-      <img src={image} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <a href="/">Learn More</a>
+    <div className="text-center">
+      <img className="min-h-[230px] mx-auto mb-3" src={image} />
+      <h3 className="mb-4">{title}</h3>
+      <p className="max-w-[316px] mt-0 mx-auto mb-5">{description}</p>
+      <a className="text-primary-color no-underline" href="/">
+        Learn More
+      </a>
     </div>
   );
 }

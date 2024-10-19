@@ -1,11 +1,15 @@
 interface IButton {
   content: string;
   href: string;
+  customStyles?: string;
 }
 
-export function Button({ content, href }: IButton) {
+export function Button({ content, href, customStyles }: IButton) {
   return (
-    <a className="btn-primary" href={href}>
+    <a
+      className={`bg-primary-color rounded-[25px] text-white block h-fit p-4 w-fit no-underline shadow-md ${customStyles}`}
+      href={href}
+    >
       {content}
     </a>
   );

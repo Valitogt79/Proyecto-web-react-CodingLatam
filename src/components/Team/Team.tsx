@@ -13,8 +13,8 @@ export function Team() {
       .then((data) => setTeammates(data));
   }, []);
   return (
-    <section className="team">
-      <div className="container team-container">
+    <section className="bg-gray pt-12 px-0 b-24">
+      <div className="container grid grid-1 gap-5 lg:grid-cols-[1fr_2fr_auto]">
         <div className="info">
           <h2>We are proud of our design team</h2>
           <p>
@@ -22,30 +22,30 @@ export function Team() {
             for you.
           </p>
         </div>
-        <div className="team-stadistics">
-          <div className="team-stadiatics-item">
-            <div className="image">
-              <img src={checkIcon} alt="" />
+        <div className="flex flex-wrap gap-[100px]">
+          <div className="flex flex-col item-center text-center md:gap-3 flex-1">
+            <div className="bg-skyblue rounded-full p-4 w-fit">
+              <img className="h-[26px]" src={checkIcon} alt="" />
             </div>
-            <h3>1000+</h3>
+            <h3 className="text-[41px]">1000+</h3>
             <p>Completed Projects</p>
           </div>
-          <div className="team-stadiatics-item">
-            <div className="image">
-              <img src={userIcon} alt="" />
+          <div className="flex flex-col item-center text-center ">
+            <div className="bg-skyblue rounded-full p-4 w-fit">
+              <img className="h-[26px]" src={userIcon} alt="" />
             </div>
-            <h3>50k</h3>
+            <h3 className="text-[41px]">50k</h3>
             <p>Happy Customers</p>
           </div>
-          <div className="team-stadiatics-item">
-            <div className="image">
-              <img src={tropyIcon} alt="" />
+          <div className="flex flex-col item-center text-center">
+            <div className="bg-skyblue rounded-full p-4 w-fit">
+              <img className="h-[26px]" src={tropyIcon} alt="" />
             </div>
-            <h3>20k</h3>
+            <h3 className="text-[41px]">20k</h3>
             <p>Awards Won</p>
           </div>
         </div>
-        <div className="team-list">
+        <div className="grid grid-cols-1 gap-5 col-span-full md:grid-cols-2 lg:grid-cols-4">
           {teammates.map((item: ITeammate) => (
             <Teammate key={item.id} {...item} />
           ))}
